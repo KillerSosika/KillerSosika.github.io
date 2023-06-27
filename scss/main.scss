@@ -275,7 +275,7 @@ a {
         text-transform: uppercase;
     }
     &__link:hover{
-        color: $color_main;
+        color: #8b00ff;
     }
     &__link:hover::before{
         transform: scaleX(1);
@@ -285,7 +285,7 @@ a {
         content: '';
         width: 100%;
         height: 1px;
-        background-color: $color_main;
+        background-color: #8b00ff;
         position: absolute;
         left: 0; bottom: -5px;
         transform: scaleX(0);
@@ -774,8 +774,8 @@ h3 {
     gap: 32px;
 }
 
-.social_link:hover {
-    fill: #5373FD;
-  }
+.social_link:hover .social_icon {
+    fill: #5373FD; 
+}
 
   
