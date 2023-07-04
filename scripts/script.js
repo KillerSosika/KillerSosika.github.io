@@ -1,37 +1,12 @@
-var pi = Math.PI;
+let user_even_number=NaN;
 
-let academ = 'Beetroot';
-let courses ='FrontEnd';
-let country = 'Ukrain';
-let fullName = 'Skaliush Dmytro';
-let pay = '1000';
+while(isNaN(user_even_number)|| user_even_number%2 !==0 ||user_even_number<10 || user_even_number>50){
+    user_even_number = parseInt(prompt("Введіть парне число в області від 10 до 50:"));
 
-
-let all = academ+"\n"+courses+"\n"+country+"\n"+fullName+"\n"+pay;
-console.log(all);
-
-
-let vars =  parseInt(prompt('Що треба зробити 1.радіс кола 2.Відстань та час 3.Курс долар-євро'))
-
-switch(vars){
-    case 1:
-        let rad = prompt('введіть радіус кола')
-        alert("Радіус дорівнює = "+(rad*rad)*pi)
-    break;
-    
-    case 2:
-        let km = parseFloat(prompt('введіть відстань в км'))
-        let tm = parseFloat(prompt('введіть час в годинах за котрий ви бажаєте доїхати'))
-        alert("наймешьна швидкість ="+km/tm+"км/год")
-    break;
-
-    case 3:
-        const currency = 0.92
-        let dol = parseFloat(prompt('Ведіть кількість долларів'))
-        alert("За цю кількість доларів можно купити"+dol*currency+"євро")
-    break;
-
-    default:
-    alert('######');
-    break;
+    if(isNaN(user_even_number)){
+        alert("Некорректный ввод. Попробуйте снова.");
+    }
 }
+
+
+console.log("Половина вашого парного числа", user_even_number/2);
