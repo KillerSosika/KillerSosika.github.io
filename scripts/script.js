@@ -4,7 +4,7 @@ while(isNaN(user_even_number)|| user_even_number%2 !==0 ||user_even_number<10 ||
     user_even_number = parseInt(prompt("Введіть парне число в області від 10 до 50:"));
 
     if(isNaN(user_even_number)){
-        alert("Невірний вхід. Спробуйте ще раз.");
+        alert("Невірний ввід. Спробуйте ще раз.");
     }
 }
 
