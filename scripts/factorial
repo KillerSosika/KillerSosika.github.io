@@ -1,0 +1,16 @@
+function factorialLessThan(target) {
+  let n = 1n; 
+  let factorial = 1n;
+  
+  while (factorial < target) {
+    n++;
+    factorial *= BigInt(n);
+  }
+  
+  return n - 1n; 
+}
+
+const targetNumber = 9007199254740991n; 
+const result = factorialLessThan(targetNumber);
+
+console.log("Наибольшее число, факториал которого меньше", targetNumber, ":", result.toString());
